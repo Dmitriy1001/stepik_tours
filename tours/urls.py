@@ -1,9 +1,9 @@
 from django.urls import path
+
 from . import views
 
-
 urlpatterns = [
-    path('', views.main_view),
-    path('departure/<str:departure>/', views.departure_view),
-    path('tour/<int:id>/', views.tour_view),
+    path('', views.main_view, name='index'),
+    path('departure/<str:departure>/', views.departure_view, name='departure_tours'),
+    path('tour/<int:id>/', views.tour_view, name='tour_detail'),
 ]

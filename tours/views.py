@@ -14,7 +14,7 @@ def main_view(request):
         'title': data.title,
         'subtitle': data.subtitle,
         'description': data.description,
-        'tours': random_tours
+        'tours': random_tours,
     }
     return render(request, 'tours/index.html', context)
 
@@ -32,15 +32,15 @@ def departure_view(request, departure):
             'min_price': '{:,}'.format(min(prices)).replace(',', ' '),
             'max_price': '{:,}'.format(max(prices)).replace(',', ' '),
             'min_nights': '{:,}'.format(min(nights)).replace(',', ' '),
-            'max_nights': '{:,}'.format(max(nights)).replace(',', ' ')
+            'max_nights': '{:,}'.format(max(nights)).replace(',', ' '),
         }
         return render(request, 'tours/departure.html', context)
     else:
         raise Http404
 
 
-def tour_view(request, id):
-    tour = data.tours.get(id)
+def tour_view(request, tour_id):
+    tour = data.tours.get(tour_id)
     if tour:
         context = {
             'departures': data.departures,
@@ -52,7 +52,7 @@ def tour_view(request, id):
             'stars': '★' * int(tour['stars']),
             'country': tour['country'],
             'nights_qty': utils.make_correct_ending(tour['nights'], 'night'),
-            'date': tour['date']
+            'date': tour['date'],
         }
         return render(request, 'tours/tour.html', context)
     else:

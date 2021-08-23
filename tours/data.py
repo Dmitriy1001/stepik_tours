@@ -196,7 +196,7 @@ tours = {
         "stars": "3",
         "country": "Куба",
         "nights": 8,
-        "date": "26 января"
+        "date": "26 января",
     },
     14: {
         "title": "History Hotel & Spa",
@@ -242,6 +242,6 @@ tours = {
         "country": "Вьетнам",
         "nights": 12,
         "date": "24 января",
-    }
+    },
 
 }

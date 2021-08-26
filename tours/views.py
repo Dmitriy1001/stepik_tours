@@ -40,20 +40,20 @@ def departure_view(request, departure):
 
 
 def tour_view(request, tour_id):
-    tour = data.tours.get(tour_id)
-    if tour:
-        context = {
-            'departures': data.departures,
-            'title': tour['title'],
-            'description': tour['description'],
-            'departure': data.departures.get(tour['departure']),
-            'picture': tour['picture'],
-            'price': '{:,}'.format(tour['price']).replace(',', ' '),
-            'stars': '★' * int(tour['stars']),
-            'country': tour['country'],
-            'nights_qty': utils.make_correct_ending(tour['nights'], 'night'),
-            'date': tour['date'],
-        }
-        return render(request, 'tours/tour.html', context)
-    else:
+    try:
+        tour = data.tours[tour_id]
+    except KeyError:
         raise Http404
+    context = {
+        'departures': data.departures,
+        'title': tour['title'],
+        'description': tour['description'],
+        'departure': data.departures.get(tour['departure']),
+        'picture': tour['picture'],
+        'price': '{:,}'.format(tour['price']).replace(',', ' '),
+        'stars': '★' * int(tour['stars']),
+        'country': tour['country'],
+        'nights_qty': utils.make_correct_ending(tour['nights'], 'night'),
+        'date': tour['date'],
+    }
+    return render(request, 'tours/tour.html', context)

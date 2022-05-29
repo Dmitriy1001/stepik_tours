@@ -1,4 +1,4 @@
-# Stepik tours
+# YouTours
 ### Набросок сайта турагенства
 https://youtours.herokuapp.com/
 #### в рамках курса "Django с нуля на практике" от stepik

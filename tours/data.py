@@ -1,9 +1,9 @@
-title = "Stepik Travel"
+title = "YouTours"
 subtitle = "Для тех, кого отвлекают дома"
 description = '''Лучшие направления, где никто не будет вам мешать сидеть на берегу и изучать программирование,
 дизайн, разработку игр и управление продуктами'''
-departures = {"msk": "Из Москвы", "spb": "Из Петербурга", "nsk": "Из Новосибирска", "ekb": "Из Екатеринбурга",
-              "kazan": "Из Казани"}
+departures = {"odessa": "Из Одессы", "kyiv": "Из Киева", "lviv": "Из Львова", "kharkiv": "Из Харькова",
+              "dnipro": "Из Днепра"}
 
 tours = {
     1: {
@@ -11,10 +11,10 @@ tours = {
         "description": "Отель выглядит уютно. Он был построен из красного соснового дерева и украшен синими камнями.  "
                        "Высокие округлые окна добавляют общий стиль дома и были добавлены в дом в довольно "
                        "симметричном образце.",
-        "departure": "nsk",
+        "departure": "lviv",
         "picture": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 62000,
+        "price": 950,
         "stars": "4",
         "country": "Куба",
         "nights": 6,
@@ -25,10 +25,10 @@ tours = {
         "description": "Здание отеля имеет форму короткой буквы U. Два расширения связаны стеклянными нависающими "
                        "панелями. Второй этаж такого же размера, как и первый, который был построен точно над полом "
                        "под ним. Этот этаж имеет совершенно другой стиль, чем этаж ниже.",
-        "departure": "ekb",
+        "departure": "lviv",
         "picture": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 85000,
+        "price": 1300,
         "stars": "5",
         "country": "Вьетнам",
         "nights": 8,
@@ -39,10 +39,10 @@ tours = {
         "description": "Снаружи отель выглядит красиво и традиционно. Он был построен с белыми камнями и имеет еловые "
                        "деревянные украшения. Высокие, большие окна добавляют к общему стилю дома и были добавлены в "
                        "дом в основном симметричным способом.",
-        "departure": "nsk",
+        "departure": "kyiv",
         "picture": "https://images.unsplash.com/photo-1569660072562-48a035e65c30?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 63000,
+        "price": 950,
         "stars": "3",
         "country": "Пакистан",
         "nights": 11,
@@ -53,10 +53,10 @@ tours = {
         "description": "Каждый домик оборудован средней кухней и одной небольшой ванной комнатой, в нем также есть "
                        "уютная гостиная, две спальни, скромная столовая и большой подвал.  Небольшие треугольные окна "
                        "добавляют к общему стилю дома и были добавлены в дом в основном симметричным способом.",
-        "departure": "msk",
+        "departure": "kyiv",
         "picture": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 62000,
+        "price": 950,
         "stars": "4",
         "country": "Индия",
         "nights": 9,
@@ -67,10 +67,10 @@ tours = {
         "description": "Этот дом среднего размера имеет футуристический вид и находится в среднем состоянии. Интерьер "
                        "выполнен в насыщенных тонах. Двор небольшой и выглядит очень формально. Кроме того, "
                        "странные огни были замечены движущимися в доме ночью.",
-        "departure": "msk",
+        "departure": "kharkiv",
         "picture": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 68000,
+        "price": 1000,
         "stars": "4",
         "country": "Доминикана",
         "nights": 8,
@@ -82,10 +82,10 @@ tours = {
                        "выполнен в цветах, которые напоминают вам о тропическом лесу. Двор небольшой и заросший "
                        "дикими растениями. Кроме того, это было однажды показано в телесериале, демонстрирующем "
                        "необычно украшенные дома.",
-        "departure": "spb",
+        "departure": "kharkiv",
         "picture": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 53000,
+        "price": 800,
         "stars": "3",
         "country": "Пакистан",
         "nights": 13,
@@ -97,10 +97,10 @@ tours = {
                        "Интерьер выполнен в цветах, которые напоминают о весеннем цветнике. Двор среднего размера и "
                        "напоминает луг. Кроме того, он был построен над остатками дома, который был разрушен в "
                        "результате пожара.",
-        "departure": "ekb",
+        "departure": "kharkiv",
         "picture": "https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 72000,
+        "price": 1100,
         "stars": "5",
         "country": "Мексика",
         "nights": 9,
@@ -111,10 +111,10 @@ tours = {
         "description": "Этот огромный дом почти выглядит инопланетянином и находится в среднем состоянии. Интерьер "
                        "выполнен в цветах, напоминающих апельсиновое дерево. Двор среднего размера и напоминает луг. "
                        "Кроме того, это место печально известного убийства.",
-        "departure": "kazan",
+        "departure": "kyiv",
         "picture": "https://images.unsplash.com/photo-1549109786-eb80da56e693?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 44000,
+        "price": 670,
         "stars": "4",
         "country": "Тайланд",
         "nights": 7,
@@ -127,10 +127,10 @@ tours = {
                        "недавно созданной земли, а дом имеет большой решетчатый забор через него. На заднем дворе "
                        "живут различные животные. Многие владельцы приложили согласованные усилия для поддержания "
                        "этой собственности.",
-        "departure": "nsk",
+        "departure": "dnipro",
         "picture": "https://images.unsplash.com/photo-1570214476695-19bd467e6f7a?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 39000,
+        "price": 600,
         "stars": "3",
         "country": "Индия",
         "nights": 10,
@@ -141,10 +141,10 @@ tours = {
         "description": "Снаружи этот дом выглядит старым, но чудесным. Он был построен из желтого соснового дерева и "
                        "украшен белым кирпичом. Короткие, широкие окна пропускают много света и были добавлены в дом "
                        "очень симметричным способом.",
-        "departure": "msk",
+        "departure": "odessa",
         "picture": "https://images.unsplash.com/photo-1560200353-ce0a76b1d438?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 52000,
+        "price": 800,
         "stars": "4",
         "country": "Куба",
         "nights": 10,
@@ -156,10 +156,10 @@ tours = {
                        "просторные, с большими окнами, они светлее, чтобы улучшить впечатление. Снаружи есть пять "
                        "маленьких деревьев. Двор в очень хорошем состоянии и очень живописный. Есть пруд для "
                        "развлечения",
-        "departure": "spb",
+        "departure": "lviv",
         "picture": "https://images.unsplash.com/photo-1477120128765-a0528148fed2?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 68000,
+        "price": 1000,
         "stars": "5",
         "country": "Индия",
         "nights": 9,
@@ -172,10 +172,10 @@ tours = {
                        "хорошо построенный и в хорошем состоянии, но, к сожалению, кровати сгорели в мае этого года "
                        "и, к сожалению, все еще нуждаются в ремонте. Возможно, понадобится целая команда, "
                        "чтобы заменить старую медную топку.",
-        "departure": "kazan",
+        "departure": "kyiv",
         "picture": "https://images.unsplash.com/photo-1440151050977-247552660a3b?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 72000,
+        "price": 1100,
         "stars": "4",
         "country": "Мексика",
         "nights": 12,
@@ -189,10 +189,10 @@ tours = {
                        "покрыта коричневой черепицей. Один большой дымоход высовывает центр крыши. На крыше нет окон. "
                        "Сам дом окружен великолепным садом с виноградными лозами, пагодой, прудом и множеством разных "
                        "цветов.",
-        "departure": "ekb",
+        "departure": "odessa",
         "picture": "https://images.unsplash.com/photo-1553653924-39b70295f8da?ixlib=rb-1.2.1&auto=format&fit=crop&w"
                    "=800&q=60",
-        "price": 49000,
+        "price": 750,
         "stars": "3",
         "country": "Куба",
         "nights": 8,
@@ -204,10 +204,10 @@ tours = {
                        "находятся по обе стороны от дома. Многие меньшие окна пропускают много света в комнаты под "
                        "крышей.Сам дом окружен асфальтированной землей, с местом для еды и отдыха на открытом воздухе "
                        "и различными горшечными растениями.",
-        "departure": "kazan",
+        "departure": "odessa",
         "picture": "https://images.unsplash.com/photo-1509600110300-21b9d5fedeb7?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 91000,
+        "price": 1300,
         "stars": "5",
         "country": "Вьетнам",
         "nights": 9,
@@ -218,10 +218,10 @@ tours = {
         "description": "Здание имеет форму круга. Дом частично окружен деревянными нависающими панелями с двух "
                        "сторон. Второй этаж меньше первого, что позволило создать несколько балконов по бокам дома. "
                        "Этот этаж следует тому же стилю, что и этаж ниже.",
-        "departure": "spb",
+        "departure": "dnipro",
         "picture": "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 82000,
+        "price": 1250,
         "stars": "4",
         "country": "Доминикана",
         "nights": 8,
@@ -234,10 +234,10 @@ tours = {
                        "мебель. Пол деревянный, а стены текстурированы и окрашены.Настенные и напольные светильники "
                        "обеспечивают свет. Комната оформлена в цветах, напоминающих облачное небо, и в целом выглядит "
                        "очень старомодно. Первое, что вы заметите, это тщеславие.",
-        "departure": "spb",
+        "departure": "dnipro",
         "picture": "https://images.unsplash.com/photo-1564056095795-4d63b6463dbf?ixlib=rb-1.2.1&ixid"
                    "=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-        "price": 74000,
+        "price": 1150,
         "stars": "5",
         "country": "Вьетнам",
         "nights": 12,
